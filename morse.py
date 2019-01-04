@@ -34,5 +34,3 @@ def morsecode(message):
         result += arr[i][0] + ' '
     
     return result
-
-print(morsecode('HelLO ! ? . , ---'))
