@@ -25,12 +25,12 @@ letters = {
 
 
 def morsecode(message): 
-    message = message.lower() 
+    message = message.lower() # convert to lowercase
     arr = []
     result = ''
     
     for i in range(len(message)):
-        arr.append('   ') if message[i] == ' ' else arr.append(letters[message[i]])
+        arr.append('   ') if message[i] == ' ' else arr.append(letters[message[i]]) # add a space between words
         result += arr[i][0] + ' '
     
     return result
